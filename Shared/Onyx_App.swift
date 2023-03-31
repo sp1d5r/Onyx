@@ -7,11 +7,12 @@
 
 import SwiftUI
 
+
 @main
-struct Black_DiamondApp: App {
+struct Onyx_App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HompageView()
         }
     }
 }

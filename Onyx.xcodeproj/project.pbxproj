@@ -11,12 +11,17 @@
 		F77844B229D15AD4003938EE /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77844B129D15AD4003938EE /* Tests_iOSLaunchTests.swift */; };
 		F77844BC29D15AD4003938EE /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77844BB29D15AD4003938EE /* Tests_macOS.swift */; };
 		F77844BE29D15AD4003938EE /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77844BD29D15AD4003938EE /* Tests_macOSLaunchTests.swift */; };
-		F77844BF29D15AD4003938EE /* Black_DiamondApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F778449729D15AD0003938EE /* Black_DiamondApp.swift */; };
-		F77844C029D15AD4003938EE /* Black_DiamondApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F778449729D15AD0003938EE /* Black_DiamondApp.swift */; };
+		F77844BF29D15AD4003938EE /* Onyx_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F778449729D15AD0003938EE /* Onyx_App.swift */; };
+		F77844C029D15AD4003938EE /* Onyx_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F778449729D15AD0003938EE /* Onyx_App.swift */; };
 		F77844C129D15AD4003938EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F778449829D15AD0003938EE /* ContentView.swift */; };
 		F77844C229D15AD4003938EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F778449829D15AD0003938EE /* ContentView.swift */; };
 		F77844C329D15AD4003938EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F778449929D15AD3003938EE /* Assets.xcassets */; };
 		F77844C429D15AD4003938EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F778449929D15AD3003938EE /* Assets.xcassets */; };
+		F77844D529D15CC8003938EE /* HomepageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77844D429D15CC8003938EE /* HomepageView.swift */; };
+		F77844D729D22319003938EE /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77844D629D22319003938EE /* DashboardView.swift */; };
+		F77844D929D2239F003938EE /* HomepageConsts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77844D829D2239F003938EE /* HomepageConsts.swift */; };
+		F77844DB29D75148003938EE /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77844DA29D75148003938EE /* Cache.swift */; };
+		F77844DC29D75148003938EE /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77844DA29D75148003938EE /* Cache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F778449729D15AD0003938EE /* Black_DiamondApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Black_DiamondApp.swift; sourceTree = "<group>"; };
+		F778449729D15AD0003938EE /* Onyx_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onyx_App.swift; sourceTree = "<group>"; };
 		F778449829D15AD0003938EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F778449929D15AD3003938EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F778449E29D15AD3003938EE /* Black Diamond.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Black Diamond.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F77844A429D15AD3003938EE /* Black Diamond.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Black Diamond.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F778449E29D15AD3003938EE /* Onyx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Onyx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F77844A429D15AD3003938EE /* Onyx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Onyx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77844A629D15AD3003938EE /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		F77844AB29D15AD4003938EE /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77844AF29D15AD4003938EE /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
@@ -49,6 +54,10 @@
 		F77844B729D15AD4003938EE /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77844BB29D15AD4003938EE /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		F77844BD29D15AD4003938EE /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		F77844D429D15CC8003938EE /* HomepageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageView.swift; sourceTree = "<group>"; };
+		F77844D629D22319003938EE /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		F77844D829D2239F003938EE /* HomepageConsts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageConsts.swift; sourceTree = "<group>"; };
+		F77844DA29D75148003938EE /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +106,14 @@
 		F778449629D15AD0003938EE /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				F778449729D15AD0003938EE /* Black_DiamondApp.swift */,
+				F77844D429D15CC8003938EE /* HomepageView.swift */,
+				F77844D629D22319003938EE /* DashboardView.swift */,
+				F77844D829D2239F003938EE /* HomepageConsts.swift */,
+				F77844D329D15CB5003938EE /* Homepage */,
+				F778449729D15AD0003938EE /* Onyx_App.swift */,
 				F778449829D15AD0003938EE /* ContentView.swift */,
 				F778449929D15AD3003938EE /* Assets.xcassets */,
+				F77844DA29D75148003938EE /* Cache.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -107,8 +121,8 @@
 		F778449F29D15AD3003938EE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F778449E29D15AD3003938EE /* Black Diamond.app */,
-				F77844A429D15AD3003938EE /* Black Diamond.app */,
+				F778449E29D15AD3003938EE /* Onyx.app */,
+				F77844A429D15AD3003938EE /* Onyx.app */,
 				F77844AB29D15AD4003938EE /* Tests iOS.xctest */,
 				F77844B729D15AD4003938EE /* Tests macOS.xctest */,
 			);
@@ -141,12 +155,19 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		F77844D329D15CB5003938EE /* Homepage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Homepage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F778449D29D15AD3003938EE /* Black Diamond (iOS) */ = {
+		F778449D29D15AD3003938EE /* Onyx (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F77844C729D15AD4003938EE /* Build configuration list for PBXNativeTarget "Black Diamond (iOS)" */;
+			buildConfigurationList = F77844C729D15AD4003938EE /* Build configuration list for PBXNativeTarget "Onyx (iOS)" */;
 			buildPhases = (
 				F778449A29D15AD3003938EE /* Sources */,
 				F778449B29D15AD3003938EE /* Frameworks */,
@@ -156,14 +177,14 @@
 			);
 			dependencies = (
 			);
-			name = "Black Diamond (iOS)";
+			name = "Onyx (iOS)";
 			productName = "Black Diamond (iOS)";
-			productReference = F778449E29D15AD3003938EE /* Black Diamond.app */;
+			productReference = F778449E29D15AD3003938EE /* Onyx.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F77844A329D15AD3003938EE /* Black Diamond (macOS) */ = {
+		F77844A329D15AD3003938EE /* Onyx (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F77844CA29D15AD4003938EE /* Build configuration list for PBXNativeTarget "Black Diamond (macOS)" */;
+			buildConfigurationList = F77844CA29D15AD4003938EE /* Build configuration list for PBXNativeTarget "Onyx (macOS)" */;
 			buildPhases = (
 				F77844A029D15AD3003938EE /* Sources */,
 				F77844A129D15AD3003938EE /* Frameworks */,
@@ -173,9 +194,9 @@
 			);
 			dependencies = (
 			);
-			name = "Black Diamond (macOS)";
+			name = "Onyx (macOS)";
 			productName = "Black Diamond (macOS)";
-			productReference = F77844A429D15AD3003938EE /* Black Diamond.app */;
+			productReference = F77844A429D15AD3003938EE /* Onyx.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F77844AA29D15AD4003938EE /* Tests iOS */ = {
@@ -240,7 +261,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F778449529D15AD0003938EE /* Build configuration list for PBXProject "Black Diamond" */;
+			buildConfigurationList = F778449529D15AD0003938EE /* Build configuration list for PBXProject "Onyx" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -253,8 +274,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F778449D29D15AD3003938EE /* Black Diamond (iOS) */,
-				F77844A329D15AD3003938EE /* Black Diamond (macOS) */,
+				F778449D29D15AD3003938EE /* Onyx (iOS) */,
+				F77844A329D15AD3003938EE /* Onyx (macOS) */,
 				F77844AA29D15AD4003938EE /* Tests iOS */,
 				F77844B629D15AD4003938EE /* Tests macOS */,
 			);
@@ -299,8 +320,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F77844D529D15CC8003938EE /* HomepageView.swift in Sources */,
+				F77844D729D22319003938EE /* DashboardView.swift in Sources */,
 				F77844C129D15AD4003938EE /* ContentView.swift in Sources */,
-				F77844BF29D15AD4003938EE /* Black_DiamondApp.swift in Sources */,
+				F77844BF29D15AD4003938EE /* Onyx_App.swift in Sources */,
+				F77844DB29D75148003938EE /* Cache.swift in Sources */,
+				F77844D929D2239F003938EE /* HomepageConsts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +334,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F77844C229D15AD4003938EE /* ContentView.swift in Sources */,
-				F77844C029D15AD4003938EE /* Black_DiamondApp.swift in Sources */,
+				F77844DC29D75148003938EE /* Cache.swift in Sources */,
+				F77844C029D15AD4003938EE /* Onyx_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,12 +362,12 @@
 /* Begin PBXTargetDependency section */
 		F77844AD29D15AD4003938EE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F778449D29D15AD3003938EE /* Black Diamond (iOS) */;
+			target = F778449D29D15AD3003938EE /* Onyx (iOS) */;
 			targetProxy = F77844AC29D15AD4003938EE /* PBXContainerItemProxy */;
 		};
 		F77844B929D15AD4003938EE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F77844A329D15AD3003938EE /* Black Diamond (macOS) */;
+			target = F77844A329D15AD3003938EE /* Onyx (macOS) */;
 			targetProxy = F77844B829D15AD4003938EE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -478,7 +504,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.elijahahmad.Black-Diamond";
-				PRODUCT_NAME = "Black Diamond";
+				PRODUCT_NAME = Onyx;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -508,7 +534,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.elijahahmad.Black-Diamond";
-				PRODUCT_NAME = "Black Diamond";
+				PRODUCT_NAME = Onyx;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -538,7 +564,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.elijahahmad.Black-Diamond";
-				PRODUCT_NAME = "Black Diamond";
+				PRODUCT_NAME = Onyx;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -566,7 +592,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.elijahahmad.Black-Diamond";
-				PRODUCT_NAME = "Black Diamond";
+				PRODUCT_NAME = Onyx;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -655,7 +681,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F778449529D15AD0003938EE /* Build configuration list for PBXProject "Black Diamond" */ = {
+		F778449529D15AD0003938EE /* Build configuration list for PBXProject "Onyx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F77844C529D15AD4003938EE /* Debug */,
@@ -664,7 +690,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F77844C729D15AD4003938EE /* Build configuration list for PBXNativeTarget "Black Diamond (iOS)" */ = {
+		F77844C729D15AD4003938EE /* Build configuration list for PBXNativeTarget "Onyx (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F77844C829D15AD4003938EE /* Debug */,
@@ -673,7 +699,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F77844CA29D15AD4003938EE /* Build configuration list for PBXNativeTarget "Black Diamond (macOS)" */ = {
+		F77844CA29D15AD4003938EE /* Build configuration list for PBXNativeTarget "Onyx (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F77844CB29D15AD4003938EE /* Debug */,
