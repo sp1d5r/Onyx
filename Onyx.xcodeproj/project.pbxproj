@@ -22,6 +22,10 @@
 		F77844D929D2239F003938EE /* HomepageConsts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77844D829D2239F003938EE /* HomepageConsts.swift */; };
 		F77844DB29D75148003938EE /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77844DA29D75148003938EE /* Cache.swift */; };
 		F77844DC29D75148003938EE /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77844DA29D75148003938EE /* Cache.swift */; };
+		F77844DE29D81349003938EE /* AddToPorfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77844DD29D81349003938EE /* AddToPorfolioView.swift */; };
+		F77844DF29D81349003938EE /* AddToPorfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77844DD29D81349003938EE /* AddToPorfolioView.swift */; };
+		F77844E129D8181E003938EE /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77844E029D8181E003938EE /* Screen.swift */; };
+		F77844E229D8181E003938EE /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77844E029D8181E003938EE /* Screen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,8 @@
 		F77844D629D22319003938EE /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		F77844D829D2239F003938EE /* HomepageConsts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageConsts.swift; sourceTree = "<group>"; };
 		F77844DA29D75148003938EE /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		F77844DD29D81349003938EE /* AddToPorfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToPorfolioView.swift; sourceTree = "<group>"; };
+		F77844E029D8181E003938EE /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,8 @@
 				F778449829D15AD0003938EE /* ContentView.swift */,
 				F778449929D15AD3003938EE /* Assets.xcassets */,
 				F77844DA29D75148003938EE /* Cache.swift */,
+				F77844DD29D81349003938EE /* AddToPorfolioView.swift */,
+				F77844E029D8181E003938EE /* Screen.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -321,11 +329,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F77844D529D15CC8003938EE /* HomepageView.swift in Sources */,
+				F77844DE29D81349003938EE /* AddToPorfolioView.swift in Sources */,
 				F77844D729D22319003938EE /* DashboardView.swift in Sources */,
 				F77844C129D15AD4003938EE /* ContentView.swift in Sources */,
 				F77844BF29D15AD4003938EE /* Onyx_App.swift in Sources */,
 				F77844DB29D75148003938EE /* Cache.swift in Sources */,
 				F77844D929D2239F003938EE /* HomepageConsts.swift in Sources */,
+				F77844E129D8181E003938EE /* Screen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +343,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F77844E229D8181E003938EE /* Screen.swift in Sources */,
+				F77844DF29D81349003938EE /* AddToPorfolioView.swift in Sources */,
 				F77844C229D15AD4003938EE /* ContentView.swift in Sources */,
 				F77844DC29D75148003938EE /* Cache.swift in Sources */,
 				F77844C029D15AD4003938EE /* Onyx_App.swift in Sources */,

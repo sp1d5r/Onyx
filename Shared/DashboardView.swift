@@ -26,12 +26,9 @@ struct DashboardTotalView: View {
                 Spacer()
                 
                 // Button to Add new Stock Value
-                Button(action: {print("pressed Add")}
-                ) {
-                    Text("+")
-                        .foregroundColor(WHITE)
-                        .font(.largeTitle)
-                }
+                NavigationLink("+", destination: AddToPorfolioView("", 3.2))
+                    .foregroundColor(WHITE)
+                    .font(.largeTitle)
             }
             .padding(20)
             .frame(width: UIScreen.screenWidth*0.8)

@@ -8,19 +8,17 @@
 import Foundation
 import SwiftUI
 
+struct CurrencyPoftolio :Hashable {
+    let token: String
+    let value: Float
+    let rate: Float
+    let type: String
+}
+
 let portfolio =  [
-    "ada": [
-        "value": 0.318,
-        "coins": 30102
-    ],
-    "btc": [
-        "value": 22981.31,
-        "coins": 0.32
-    ],
-    "eth": [
-        "value": 1480.35,
-        "coins": 3.43
-    ]
+    CurrencyPoftolio(token: "ada", value: 0.318, rate: 30102, type: "currency"),
+    CurrencyPoftolio(token: "btc", value: 22981.31, rate: 0.32, type: "currency"),
+    CurrencyPoftolio(token: "eth", value: 3.43, rate:  1480.35, type: "currency")
 ]
 
 struct CurrencyView: View {
@@ -39,8 +37,7 @@ struct CurrencyView: View {
     
     var body: some View {
         HStack {
-            Button(action: {print("pressed Add")}
-            ) {
+            NavigationLink(destination: AddToPorfolioView(token, rate)){
                 AsyncImage(
                     url: URL(string: "https://cryptoicons.org/api/white/\(token)/400")!
                 ) { phase in
@@ -100,8 +97,8 @@ struct HompageView: View {
     
     func getTotalValue() -> Float {
         var totalValue : Float = 0;
-        for key in portfolio.keys {
-            totalValue = totalValue +  Float(portfolio[key]?["value"] ?? 0)
+        for currencyValue in portfolio {
+            totalValue = totalValue +  Float(currencyValue.value)
         }
         return totalValue;
     }
@@ -133,17 +130,20 @@ struct HompageView: View {
                 
                 ScrollView {
                     VStack(spacing: 10) {
-                        CurrencyView("ada", 0.318, 30102)
-                        CurrencyView("btc", 22981.31, 0.42)
-                        CurrencyView("eth", 1480.35, 20)
+                        ForEach(portfolio, id:\.self) {
+                            contentValue in
+                            CurrencyView(contentValue.token, contentValue.rate, contentValue.value)
+                        }
+                        
                     }
-                    .frame(maxWidth: .infinity)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
                 }
                 
                 
                 Spacer()
-                
+                Spacer()
                 }
+                .frame(maxHeight: .infinity)
             )
     }
 }
@@ -152,11 +152,4 @@ struct PreviewsView_Previews: PreviewProvider {
     static var previews: some View {
         HompageView()
     }
-}
-
-
-extension UIScreen{
-   static let screenWidth = UIScreen.main.bounds.size.width
-   static let screenHeight = UIScreen.main.bounds.size.height
-   static let screenSize = UIScreen.main.bounds.size
 }

@@ -12,7 +12,10 @@ import SwiftUI
 struct Onyx_App: App {
     var body: some Scene {
         WindowGroup {
-            HompageView()
+            NavigationView{
+                HompageView()
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
     }
 }
